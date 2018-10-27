@@ -6,6 +6,6 @@ namespace Pregunta06OCP
 {
     public interface ISalaryCalculator
     {
-        int CalculateSalary(WorkPerson person);
+        int CalculateSalary(WorkPerson person, int workedDays);
     }
 }

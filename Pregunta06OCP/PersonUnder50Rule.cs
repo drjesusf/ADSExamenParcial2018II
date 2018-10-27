@@ -4,17 +4,18 @@ using System.Text;
 
 namespace Pregunta06OCP
 {
-    public class PersonOver50Rule : ISalaryRule
+    public class PersonUnder50Rule: ISalaryRule
     {
-        private int salaryByDayOver50 = 120;
+        private int salaryByDayUnder50 = 100;
+
         public int CalculateSalary(int workedDays)
         {
-            return workedDays * salaryByDayOver50;
+            return salaryByDayUnder50*workedDays;
         }
 
         public bool IsMatch(WorkPerson person)
         {
-            return person.Age>50;
+            return person.Age <= 50;
         }
     }
 }

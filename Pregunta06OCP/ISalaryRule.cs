@@ -7,6 +7,6 @@ namespace Pregunta06OCP
     public interface ISalaryRule
     {
         bool IsMatch(WorkPerson person);
-        int CalculateSalary(WorkPerson person);
+        int CalculateSalary(int workedDays);
     }
 }
